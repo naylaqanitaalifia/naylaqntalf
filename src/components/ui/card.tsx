@@ -14,7 +14,7 @@ interface CardProps {
 }
 
 function Card({
-  work: { image, title, description, category, link },
+  work: { image, title, description, category, slug },
 }: CardProps) {
   const [hovered, setHovered] = useState(false);
 
@@ -33,7 +33,7 @@ function Card({
 
   return (
     <Link
-      to={link}
+      to={`works/${slug}`}
       className="group flex flex-col gap-6 cursor-none"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
