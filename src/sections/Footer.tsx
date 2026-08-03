@@ -87,6 +87,8 @@ function Footer() {
             <li>
               <a
                 href="https://www.linkedin.com/in/nayla-qanita-alifia-0644772b5/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-1 text-base text-secondary"
               >
                 LinkedIn
@@ -97,6 +99,8 @@ function Footer() {
               <a
                 href="mailto:naylaqanitaalifia@gmail.com"
                 className="text-base text-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Email
               </a>
@@ -105,6 +109,8 @@ function Footer() {
               <a
                 href="https://github.com/naylaqanitaalifia"
                 className="flex items-center gap-1 text-base text-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 GitHub
                 <ArrowUpRight />

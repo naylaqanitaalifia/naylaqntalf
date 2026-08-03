@@ -33,7 +33,7 @@ function Card({
 
   return (
     <Link
-      to={`works/${slug}`}
+      to={`/works/${slug}`}
       className="group flex flex-col gap-6 cursor-none"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}

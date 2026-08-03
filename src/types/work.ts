@@ -3,6 +3,7 @@ export interface Work {
   image: string;
   gallery?: string[];
   title: string;
+  summary: string;
   description: string;
   tools?: string[];
   timeline?: string;
