@@ -3,11 +3,22 @@ import { useParams } from "react-router-dom";
 import { works } from "@/data/works";
 import OtherWorks from "@/sections/OtherWork";
 import Footer from "@/sections/Footer";
+import { useEffect } from "react";
 
 function WorkDetail() {
   const { slug } = useParams();
   const work = works.find((work) => work.slug === slug);
   const tools = work?.tools?.join(", ");
+
+  useEffect(() => {
+    if (work) {
+      document.title = `${work.title} — Work`;
+    }
+
+    return () => {
+      document.title = "Home — Nayla Qanita Alifia";
+    };
+  }, [work]);
 
   if (!work) {
     return <div className="">Work not found.</div>;
