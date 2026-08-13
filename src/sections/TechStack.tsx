@@ -9,11 +9,11 @@ import { motion } from "framer-motion";
 function TechStack() {
   return (
     <Section id="tech-stack" title="Tech Stack">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8">
         {techStacks.map((techStack, index) => (
           <motion.div
             key={techStack.name}
-            className="group relative cursor-pointer overflow-hidden rounded-2xl border border-muted-foreground p-6"
+            className="group relative cursor-pointer overflow-hidden rounded-2xl border border-muted-foreground p-4 md:p-6"
             initial={{
               opacity: 0,
               y: 30,
@@ -52,14 +52,14 @@ function TechStack() {
                 backgroundColor: techStack.color,
               }}
             /> */}
-            <div className="flex flex-col items-center justify-center gap-6">
+            <div className="flex flex-col items-center justify-center gap-4 md:gap-6">
               <img
                 key={techStack.name}
                 src={techStack.link}
                 alt={techStack.name}
                 className="size-16"
               />
-              <h4 className="text-2xl font-sulphur text-secondary">
+              <h4 className="text-xl md:text-2xl font-sulphur text-secondary">
                 {techStack.name}
               </h4>
             </div>

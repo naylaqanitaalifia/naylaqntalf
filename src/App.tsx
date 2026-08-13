@@ -17,7 +17,7 @@ function App() {
           root
           options={{ lerp: 0.07, duration: 1.5, smoothWheel: true }}
         >
-          <div className="min-h-screen bg-primary">
+          <div className="min-h-screen bg-primary overflow-x-hidden">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/works/:slug" element={<WorkDetail />} />

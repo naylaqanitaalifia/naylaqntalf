@@ -6,10 +6,11 @@ import { motion } from "framer-motion";
 function Work() {
   return (
     <Section id="work" title="Work">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div className="min-w-0 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
         {works.map((work) => (
           <motion.div
             key={work.id}
+            className="min-w-0"
             initial={{
               opacity: 0,
               y: 24,

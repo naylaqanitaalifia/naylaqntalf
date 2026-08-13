@@ -8,7 +8,7 @@ function Experience() {
       <div className="relative mx-auto my-12 max-w-5xl px-4">
         <div className="absolute left-1/2 top-0 h-full w-[1px] -translate-x-1/2 bg-neutral-800" />
 
-        <div className="flex flex-col gap-24">
+        <div className="flex flex-col gap-12 md:gap-24">
           {experiences.map((experience, index) => {
             const isEven = index % 2 === 0;
 
@@ -48,7 +48,8 @@ function Experience() {
                     {/* <span className="text-sm font-mono text-muted-foreground tracking-widest ">
                       {experience.id}
                     </span> */}
-                    <div className="flex items-center justify-between text-sm">
+                    {/* <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between text-xs md:text-sm"> */}
+                    <div className="flex items-center justify-between text-xs md:text-sm">
                       <span>
                         {experience.role} • {experience.type}
                       </span>
@@ -57,11 +58,11 @@ function Experience() {
                       </span>
                     </div>
 
-                    <h3 className="text-2xl font-blinker font-semibold text-secondary tracking-wider uppercase">
+                    <h3 className="text-xl md:text-2xl font-blinker font-semibold text-secondary tracking-wider uppercase">
                       {experience.company}
                     </h3>
 
-                    <p className="text-base font-sulphur text-muted-foreground leading-relaxed tracking-wide">
+                    <p className="text-sm md:text-base font-sulphur text-muted-foreground leading-relaxed tracking-wide">
                       {experience.description}
                     </p>
                   </div>

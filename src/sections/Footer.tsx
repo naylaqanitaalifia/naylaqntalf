@@ -44,18 +44,19 @@ function Footer() {
     <div className="">
       <div
         ref={containerRef}
-        className="py-20 text-9xl font-sulphur text-center text-secondary overflow-hidden"
+        className="py-12 md:py-20 text-6xl md:text-9xl font-sulphur text-center text-secondary overflow-hidden"
       >
         <motion.h1 style={{ x: xLets, opacity }}>Let's</motion.h1>
         <motion.h1 style={{ x: xCollab, opacity }}>Collaborate!</motion.h1>
       </div>
 
-      <div className="flex justify-between border-y border-muted-foreground py-12">
-        <div className="flex flex-col gap-5">
+      {/* <div className="flex justify-between border-y border-muted-foreground py-12"> */}
+      <div className="flex flex-col gap-10 border-y border-muted-foreground px-6 py-10 md:flex-row md:justify-between md:gap-0 md:py-12">
+        <div className="flex flex-col gap-3 md:gap-5">
           <div className="text-xs text-muted-foreground tracking-widest uppercase">
             Menu
           </div>
-          <ul className="flex flex-col gap-3">
+          <ul className="flex flex-col gap-2 md:gap-3">
             <li>
               <a href="#" className="text-base text-secondary">
                 Home
@@ -79,11 +80,11 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-3 md:gap-5">
           <div className="text-xs text-muted-foreground tracking-widest uppercase">
             Connect
           </div>
-          <ul className="flex flex-col gap-3">
+          <ul className="flex flex-col gap-2 md:gap-3">
             <li>
               <a
                 href="https://www.linkedin.com/in/nayla-qanita-alifia-0644772b5/"
@@ -92,7 +93,7 @@ function Footer() {
                 className="flex items-center gap-1 text-base text-secondary"
               >
                 LinkedIn
-                <ArrowUpRight />
+                <ArrowUpRight size={18} />
               </a>
             </li>
             <li>
@@ -113,7 +114,7 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 GitHub
-                <ArrowUpRight />
+                <ArrowUpRight size={18} />
               </a>
             </li>
           </ul>
@@ -125,7 +126,7 @@ function Footer() {
           </p>
           <a
             href="mailto:naylaqanitaalifia@gmail.com"
-            className="text-2xl text-secondary"
+            className="break-words text-xl text-secondary md:text-2xl"
           >
             naylaqanitaalifia@gmail.com
           </a>
@@ -147,7 +148,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="py-6">
+      <div className="px-6 py-3 md:py-6">
         <p className="text-sm font-sulphur text-muted-foreground">
           &copy; 2026 Nayla Qanita Alifia - All rights reserved
         </p>

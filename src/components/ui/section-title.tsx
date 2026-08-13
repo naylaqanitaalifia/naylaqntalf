@@ -9,7 +9,7 @@ function SectionTitle({ title, className }: Props) {
   return (
     <h5
       className={cn(
-        "text-4xl font-blinker font-semibold text-secondary uppercase leading-7 tracking-widest",
+        "text-3xl md:text-4xl font-blinker font-semibold text-secondary uppercase leading-7 tracking-widest",
         className,
       )}
     >

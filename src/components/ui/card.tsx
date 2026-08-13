@@ -2,11 +2,7 @@ import { Link } from "react-router-dom";
 import { Badge } from "./badge";
 import type { Work } from "@/types/work";
 import { useState } from "react";
-import {
-  AnimatePresence,
-  motion,
-  useMotionValue,
-} from "framer-motion";
+import { AnimatePresence, motion, useMotionValue } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 interface CardProps {
@@ -34,7 +30,7 @@ function Card({
   return (
     <Link
       to={`/works/${slug}`}
-      className="group flex flex-col gap-6 cursor-none"
+      className="group flex w-full min-w-0 cursor-none flex-col gap-6"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onMouseMove={(e) => {
@@ -81,12 +77,12 @@ function Card({
           className="w-full aspect-[4/3] object-cover transition-transform duration-500 ease-out group-hover:scale-105"
         />
       </div>
-      <div className="flex flex-col items-start gap-3">
-        <h4 className="text-3xl font-sulphur font-semibold text-secondary">
+      <div className="flex flex-col items-start gap-2 md:gap-3">
+        <h4 className="text-2xl md:text-3xl font-sulphur font-semibold text-secondary">
           {title}
         </h4>
-        <div className="flex flex-col items-start gap-4">
-          <p className="text-base font-sulphur text-muted-foreground tracking-wide line-clamp-2">
+        <div className="flex flex-col items-start gap-2 md:gap-4">
+          <p className="text-sm md:text-base font-sulphur text-muted-foreground tracking-wide line-clamp-2">
             {description}
           </p>
           <Badge>{category}</Badge>

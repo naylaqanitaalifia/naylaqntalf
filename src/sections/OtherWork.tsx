@@ -12,11 +12,11 @@ function OtherWorks({ currentSlug }: Props) {
 
   return (
     <Section title="Other Works">
-      <div className="flex gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
+      <div className="flex flex-col md:flex-row gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
         {otherWorks.map((work) => (
           <motion.div
             key={work.id}
-            className="w-[600px] shrink-0 snap-start"
+            className="w-[85vw] md:w-[600px] shrink-0 snap-start"
             initial={{
               opacity: 0,
               y: 24,
