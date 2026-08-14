@@ -57,9 +57,9 @@ function TechStack() {
                 key={techStack.name}
                 src={techStack.link}
                 alt={techStack.name}
-                className="size-16"
+                className="size-12 md:size-16"
               />
-              <h4 className="text-xl md:text-2xl font-sulphur text-secondary">
+              <h4 className="text-xl md:text-2xl font-sulphur text-center text-secondary">
                 {techStack.name}
               </h4>
             </div>

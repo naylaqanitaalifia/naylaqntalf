@@ -26,7 +26,7 @@ function WorkDetail() {
 
   return (
     <>
-      <div className="mx-auto max-w-6xl px-6 py-8 md:py-20">
+      <div className="mx-auto max-w-6xl px-6 md:px-8 py-8 md:py-12 xl:py-20">
         <div className="flex flex-col gap-2 md:gap-4 text-secondary">
           <h1 className="text-3xl md:text-4xl font-blinker">{work.title}</h1>
           <p className="text-sm md:text-base font-sulphur text-muted-foreground tracking-wide">
@@ -34,7 +34,6 @@ function WorkDetail() {
           </p>
           <Separator />
         </div>
-
         <div className="flex flex-col gap-8 md:gap-12 py-4 md:py-8">
           {/* DESCRIPTION */}
           <div className="flex flex-col gap-2">
@@ -47,7 +46,7 @@ function WorkDetail() {
           </div>
 
           {/*  */}
-          <div className="grid grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12">
             <div className="flex flex-col gap-1 md:gap-2">
               <h4 className="text-base md:text-xl font-blinker font-semibold text-secondary uppercase leading-7 tracking-widest">
                 Tools
@@ -140,10 +139,9 @@ function WorkDetail() {
               className="rounded-xl object-cover"
             />
           )}
-
-          <OtherWorks currentSlug={work.slug} />
         </div>
       </div>
+      <OtherWorks currentSlug={work.slug} />
       <div className="mx-auto max-w-6xl md:py-8">
         <Footer />
       </div>

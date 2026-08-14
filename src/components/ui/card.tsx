@@ -30,7 +30,7 @@ function Card({
   return (
     <Link
       to={`/works/${slug}`}
-      className="group flex w-full min-w-0 cursor-none flex-col gap-6"
+      className="group flex w-full min-w-0 cursor-none flex-col gap-2 md:gap-4 lg:gap-6"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onMouseMove={(e) => {
@@ -77,7 +77,7 @@ function Card({
           className="w-full aspect-[4/3] object-cover transition-transform duration-500 ease-out group-hover:scale-105"
         />
       </div>
-      <div className="flex flex-col items-start gap-2 md:gap-3">
+      <div className="flex flex-col items-start gap-1 md:gap-2 lg:gap-3">
         <h4 className="text-2xl md:text-3xl font-sulphur font-semibold text-secondary">
           {title}
         </h4>

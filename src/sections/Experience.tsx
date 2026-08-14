@@ -6,7 +6,7 @@ function Experience() {
   return (
     <Section id="experience" title="Experience" titleClassName="text-center">
       <div className="relative mx-auto my-12 max-w-5xl px-4">
-        <div className="absolute left-1/2 top-0 h-full w-[1px] -translate-x-1/2 bg-neutral-800" />
+        <div className="absolute left-4 top-0 h-full w-px bg-neutral-800 md:left-1/2 md:-translate-x-1/2" />
 
         <div className="flex flex-col gap-12 md:gap-24">
           {experiences.map((experience, index) => {
@@ -35,10 +35,10 @@ function Experience() {
                   ease: [0.22, 1, 0.36, 1],
                 }}
               >
-                <div className="absolute left-1/2 top-1/2 z-10 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white bg-black" />
+                <div className="absolute left-0 top-1 z-10 h-3 w-3 -translate-x-1/2 rounded-full border border-white bg-black md:left-1/2 md:top-1/2 md:-translate-y-1/2" />
 
                 <div
-                  className={`flex w-full md:w-[45%] ${
+                  className={`flex w-full pl-8 md:w-[45%] ${
                     isEven
                       ? "md:ml-auto md:pl-8 text-left"
                       : "md:mr-auto md:pr-8 md:text-right"
@@ -49,11 +49,11 @@ function Experience() {
                       {experience.id}
                     </span> */}
                     {/* <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between text-xs md:text-sm"> */}
-                    <div className="flex items-center justify-between text-xs md:text-sm">
+                    <div className="flex flex-col gap-1 text-xs md:flex-row md:items-center md:justify-between md:text-sm">
                       <span>
                         {experience.role} • {experience.type}
                       </span>
-                      <span>
+                      <span className="text-muted-foreground">
                         {experience.start_date} - {experience.end_date}
                       </span>
                     </div>

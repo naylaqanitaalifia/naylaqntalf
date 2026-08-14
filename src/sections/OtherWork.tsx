@@ -16,7 +16,7 @@ function OtherWorks({ currentSlug }: Props) {
         {otherWorks.map((work) => (
           <motion.div
             key={work.id}
-            className="w-[85vw] md:w-[600px] shrink-0 snap-start"
+            className="w-[calc(100vw-3rem)] shrink-0 snap-start sm:w-[400px] md:w-[600px]"
             initial={{
               opacity: 0,
               y: 24,
