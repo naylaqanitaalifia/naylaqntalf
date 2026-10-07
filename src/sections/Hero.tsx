@@ -53,7 +53,7 @@ function Hero() {
             </div>
             <Button variant="outline" asChild>
               <a
-                href="https://drive.google.com/file/d/1KGsOwuKWp0QYSIfnubhkAj1pZn4ZYRPt/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1Taq5BbKNCZWDOEqDcXz2RMev8EpMHmVI/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs md:text-sm"
