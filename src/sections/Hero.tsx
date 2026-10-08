@@ -1,4 +1,4 @@
-import ProfileImage from "@/assets/profile.png";
+import ProfileImage from "@/assets/nayla.png";
 import { Section } from "@/components/layouts/section";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
